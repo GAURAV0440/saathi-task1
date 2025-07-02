@@ -1,0 +1,62 @@
+Saathi Backend Internship - Task 1
+
+Description:
+This is a standalone backend service built using Node.js and Express for Task 1 of the Saathi Backend & GenAI Developer assignment. It demonstrates basic API routes and integration with external tools/libraries.
+
+Files Structure:
+
+- app.js               -> Main server entry point
+- routes/apiRoutes.js   -> GET and POST API routes
+- controllers/          -> Route handlers (business logic)
+- services/             -> External logic (GenAI, scraping, etc.)
+- .env.example          -> Template for environment variables
+- README.md             -> Instructions (also refer to this file)
+- package.json          -> Dependencies
+
+Libraries Used & Installed:
+
+Run this to install all required packages:
+> npm install express axios mongoose mysql2 dotenv cheerio
+
+- express     : For creating the server and handling routes
+- axios       : To make HTTP requests (e.g., scraping or API calls)
+- mongoose    : (If MongoDB used — optional)
+- mysql2      : (If MySQL used — optional)
+- dotenv      : For environment variable management
+- cheerio     : For HTML scraping/parsing (if needed)
+
+How to Run the Project:
+
+1. Clone the folder or unzip it
+2. Navigate to the folder in terminal:
+   > cd task1_backend_service
+3. Install dependencies:
+   > npm install
+4. Create a `.env` file using the `.env.example` as reference
+5. Start the server:
+   > node app.js
+
+
+.env File Format:
+
+Create a `.env` file in the root with the following variables:
+
+MONGO_URI=your_mongodb_connection
+MYSQL_HOST=your_mysql_host
+MYSQL_USER=your_mysql_user
+MYSQL_PASSWORD=your_mysql_password
+MYSQL_DATABASE=your_database
+
+*Only add the ones you actually use.*
+
+Sample Routes:
+
+- GET /
+  → Health check route
+
+- POST /analyze
+  → Accepts input, processes via GenAI logic or scraping logic
+
+Note:
+- Make sure to never include `.env` in your submission.
+- For any external APIs used, mention the keys in `.env.example` only.
