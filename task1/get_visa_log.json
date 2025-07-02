@@ -1,0 +1,46 @@
+[
+  {
+    "type": "GET",
+    "timestamp": "2025-06-30T17:44:02.828Z",
+    "country": "usa",
+    "result_count": 2,
+    "results": [
+      {
+        "_id": "68629918adda6f9487dbed0e",
+        "country": "usa",
+        "passport": "Indian",
+        "travel_dates": "July 2025",
+        "purpose": "Tourism",
+        "requirements": [
+          "Valid passport with 6 months validity",
+          "2 passport-size photos",
+          "Confirmed return flight tickets",
+          "Proof of accommodation",
+          "Visa application form",
+          "Travel insurance covering €30,000",
+          "Bank statements of last 3 months",
+          "Cover letter stating purpose of visit"
+        ],
+        "__v": 0
+      },
+      {
+        "_id": "6862c911a73330700d1f20f6",
+        "country": "usa",
+        "passport": "Indian",
+        "travel_dates": "July 2025",
+        "purpose": "Tourism",
+        "requirements": [
+          "Valid passport with 6 months validity",
+          "2 passport-size photos",
+          "Confirmed return flight tickets",
+          "Proof of accommodation",
+          "Visa application form",
+          "Travel insurance covering €30,000",
+          "Bank statements of last 3 months",
+          "Cover letter stating purpose of visit"
+        ],
+        "__v": 0
+      }
+    ]
+  }
+]
