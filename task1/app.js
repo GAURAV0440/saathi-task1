@@ -13,6 +13,9 @@ connectMongo();
 createVisaTable();
 
 app.use("/visa-requirements", visaRoutes);
+app.get("/", (req, res) => {
+  res.send("✅ Saathi Task 1 backend is deployed and running!");
+});
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
